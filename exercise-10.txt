@@ -1,0 +1,14 @@
+create database Hotel;
+
+use Hotel;
+
+create table Floor (`id` int auto_increment primary key);
+create table Room (`id` int auto_increment primary key);
+create table roomAvailability (`id` int auto_increment primary key);
+
+alter table Floor add `windows` int;
+
+alter table Room add `floorId` int, add `rentable` bool, add `occupants` int, add `privKitch` bool, add `carpet` bool;
+
+alter table roomAvailability add `roomId` int, add `reservationStart` datetime, add `reservationEnd` datetime;
+
