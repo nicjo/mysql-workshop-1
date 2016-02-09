@@ -1,0 +1,5 @@
+alter table Account add `email` varchar(255), add `password` varchar(40), add `creationDate` datetime, add `modifiedDate` datetime;
+
+alter table AddressBook add `accountId` int, add `name` varchar(255), add `createdOn` datetime, add `modifiedOn` datetime;
+
+alter table Entry add `addressBookId` int, add `firstName` varchar(255), add `lastName` varchar(255), add `birthday` datetime, add `type` enum ('home', 'work', 'other'), add `subType` enum ('phone', 'address', 'email'), add contentLineOne varchar(255),add contentLineTwo varchar(255),add contentLineThree varchar(255),add contentLineFour varchar(255),add contentLineFive varchar(255);  

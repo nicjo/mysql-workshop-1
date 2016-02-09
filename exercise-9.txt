@@ -1,0 +1,5 @@
+create table Chickens (`id` int auto_increment primary key, `chickenBirth` datetime, `chickenDeath` datetime, `chickenSex` enum('male', 'female', 'unknown'));
+
+Assuming chickens mature after 12 months, we know that any chicken born within the year is a chick (regardless of sex).
+Any chickens over a year old can be sorted by sex to find the roosters and the hens.
+Chickens 
